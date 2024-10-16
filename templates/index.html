@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<section>
+    <h1>Bienvenidos a Mi Empresa</h1>
+    <p>Ofrecemos soluciones innovadoras para ayudar a tu negocio a crecer.</p>
+    <div class="testimonios">
+        <h2>Testimonios</h2>
+        <p>"El mejor servicio que hemos recibido, altamente recomendado!" - Cliente Ficticio</p>
+    </div>
+    <div class="cta">
+        <a href="{{ url_for('contacto') }}">Contáctanos</a>
+    </div>
+</section>
+{% endblock %}

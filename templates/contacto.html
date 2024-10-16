@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<section>
+    <h1>Contacto</h1>
+    <form method="POST" action="{{ url_for('contacto') }}">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+        
+        <button type="submit">Enviar</button>
+    </form>
+    
+    <h3>Nuestra Dirección</h3>
+    <p>Calle Falsa 123, Ciudad Ficticia</p>
+    <p>Teléfono: 123-456-7890</p>
+    <p>Email: contacto@miempresa.com</p>
+    
+    <div class="mapa">
+        <img src="{{ url_for('static', filename='img/mapa.png') }}" alt="Mapa de ubicación">
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+    <section>
+        <h1>Noticias y Actualizaciones</h1>
+    
+        <article>
+            <h2>Lanzamiento de Nuestro Nuevo Servicio de Consultoría en Tecnología</h2>
+            <img src="{{ url_for('static', filename='img/consultoria.jpeg') }}" alt="Consultoría en Tecnología">
+            <p>Nos complace anunciar el lanzamiento de nuestro nuevo servicio de consultoría en tecnología. Nuestro equipo de expertos está listo para ayudar a las empresas a optimizar sus procesos mediante el uso de soluciones tecnológicas personalizadas. ¡Contáctanos para más información!</p>
+        </article>
+    
+        <article>
+            <h2>Participación en la Feria Internacional de Tecnología</h2>
+            <img src="{{ url_for('static', filename='img/feria_tecnologia.jpeg') }}" alt="Feria de Tecnología">
+            <p>Este mes, estaremos participando en la Feria Internacional de Tecnología en la ciudad. Ven a visitarnos en nuestro stand para conocer más sobre nuestros servicios y productos innovadores. ¡Te esperamos!</p>
+        </article>
+</section>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<section>
+    <h1>Quiénes Somos</h1>
+    <p>Mi Empresa nació en el 2020 con el objetivo de ofrecer soluciones personalizadas.</p>
+    <h2>Misión</h2>
+    <p>Proveer soluciones de alta calidad para nuestros clientes.</p>
+    <h2>Visión</h2>
+    <p>Ser líderes en el sector de soluciones empresariales.</p>
+    <h3>Nuestro Equipo</h3>
+    <div class="equipo">
+        <img src="{{ url_for('static', filename='img/team.jpg') }}" alt="Equipo">
+        <p>Nuestro equipo está formado por expertos en tecnología.</p>
+    </div>
+</section>
+{% endblock %}

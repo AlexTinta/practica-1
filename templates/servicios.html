@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<section>
+    <h1>Nuestros Servicios</h1>
+    
+    <div class="servicio">
+        <img src="{{ url_for('static', filename='img/servicio1.jpeg') }}" alt="Servicio 1">
+        <h2>Desarrollo Web Personalizado</h2>
+        <p>Ofrecemos soluciones web a medida para empresas que buscan destacar online.</p>
+        <a href="{{ url_for('servicio1') }}">Leer más</a>
+    </div>
+    
+    <div class="servicio">
+        <img src="{{ url_for('static', filename='img/servicio2.jpeg') }}" alt="Servicio 2">
+        <h2>Consultoría en Tecnología</h2>
+        <p>Asesoramiento tecnológico para optimizar procesos y mejorar la eficiencia.</p>
+        <a href="{{ url_for('servicio2') }}">Leer más</a>
+    </div>
+    
+
+</section>
+{% endblock %}
